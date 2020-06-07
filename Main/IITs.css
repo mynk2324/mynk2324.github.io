@@ -1,0 +1,11 @@
+body{font: 300 14px/1.5 'Oxygen', sans-serif;}
+body a  {
+    color: black;
+}
+body a:hover{
+    text-decoration: none;
+}
+.table td .table th{
+    padding: 20px;
+}
+

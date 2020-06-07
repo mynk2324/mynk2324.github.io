@@ -1,0 +1,281 @@
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+
+body{
+    position: relative;
+    width: 100%;
+
+}
+
+a:hover{
+    text-decoration: none;
+}
+p{
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+
+.header{
+    width: 100% ;
+    height: 100vh;
+    background:linear-gradient(rgba(252, 196, 143, 0.1), rgba(250, 248, 166, 0.1)), url('../Image/220-SM860472.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0 );
+    position: relative;
+}
+
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.1;
+    z-index: -1;
+    background: linear-gradient(to right, #f7e47e 0%, #f7c184 0%, #16c9f6 100%);
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+    }
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.25;
+    z-index: -1;
+    background: linear-gradient(to right, #f7e47e 0%, #f7c184 0%, #16c9f6 100%);
+}
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}   
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+}
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+
+}
+/*************************header part end *************************/
+.work{
+    margin: 10% 10% 10% 0%;
+
+}
+.work h1{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+
+
+
+/*************************About Us Start *************************/
+.aboutus p{
+    margin: 5px;
+    font-size: 1.25rem;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+}
+.About{
+    display: flex;
+    justify-content: center;
+
+}
+.About h2{
+    text-align: center;
+
+}
+.box{
+    
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    transition: 0.5s;
+    background: #010615;
+}
+.box:hover{
+    height: 400px;
+}
+.box .imgBx{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.box .imgBx img{
+    max-width: 100%;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+.box:hover .imgBx img{
+    opacity: 1;
+
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+
+}
+.box::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+
+}
+.box::before,
+.box::after{
+    background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+}
+.box:nth-child(2)::before,
+.box:nth-child(2)::after{
+    background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+}
+.box:nth-child(3)::before,
+.box:nth-child(3)::after{
+    background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+}
+.box .content{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.box:hover .content{
+    opacity: 1;
+
+}
+.box .content h2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.box .content h2 span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+/*************************About Us end *************************/
+/*************************footer Start *************************/
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0 ;
+    background: #3bb0f0;
+    position: relative;
+}
+.mmee{
+    background: #13a2f0; 
+}
+.footersection p{
+    color: #fff;
+}
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.footersection .footer-div p a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.footersection h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+/*************************footer end *************************/
